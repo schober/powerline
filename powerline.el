@@ -23,22 +23,64 @@
 
 (require 'cl-lib)
 
-(defface powerline-active1 '((t (:background "grey22" :inherit mode-line)))
-  "Powerline face 1."
+(defface powerline-active0
+  '((t (:background "grey22" :inherit mode-line)))
+  "Powerline face 0 (active window)."
   :group 'powerline)
 
-(defface powerline-active2 '((t (:background "grey40" :inherit mode-line)))
-  "Powerline face 2."
+(defface powerline-active0-bold
+  '((t (:background "grey22" :inherit mode-line)))
+  "Powerline face 0 (active window, bold)."
+  :group 'powerline)
+
+(defface powerline-active1
+  '((t (:background "grey22" :inherit mode-line)))
+  "Powerline face 1 (active window)."
+  :group 'powerline)
+
+(defface powerline-active1-bold
+  '((t (:background "grey22" :inherit mode-line)))
+  "Powerline face 1 (active window, bold)."
+  :group 'powerline)
+
+(defface powerline-active1-warning
+  '((t (:background "grey22" :inherit mode-line)))
+  "Powerline face 1 (active window, warning)."
+  :group 'powerline)
+
+(defface powerline-active2
+  '((t (:background "grey40" :inherit mode-line)))
+  "Powerline face 2 (active window)."
+  :group 'powerline)
+
+(defface powerline-inactive0
+  '((t (:background "grey11" :inherit mode-line-inactive)))
+  "Powerline face 0 (inactive window)."
+  :group 'powerline)
+
+(defface powerline-inactive0-bold
+  '((t (:background "grey11" :inherit mode-line-inactive)))
+  "Powerline face 0 (inactive window, bold)."
   :group 'powerline)
 
 (defface powerline-inactive1
   '((t (:background "grey11" :inherit mode-line-inactive)))
-  "Powerline face 1."
+  "Powerline face 1 (inactive window)."
+  :group 'powerline)
+
+(defface powerline-inactive1-bold
+  '((t (:background "grey11" :inherit mode-line-inactive)))
+  "Powerline face 1 (inactive window, bold)."
+  :group 'powerline)
+
+(defface powerline-inactive1-warning
+  '((t (:background "grey11" :inherit mode-line-inactive)))
+  "Powerline face 1 (inactive window, warning)."
   :group 'powerline)
 
 (defface powerline-inactive2
   '((t (:background "grey20" :inherit mode-line-inactive)))
-  "Powerline face 2."
+  "Powerline face 2 (inactive window)."
   :group 'powerline)
 
 (defface mode-line-buffer-id-inactive
